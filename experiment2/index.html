@@ -2,7 +2,7 @@
 <html>
 <head>
 	<!-- This title is used for tabs and bookmarks -->
-	<title>Experiment X - Subject/Topic</title>
+	<title>Experiment 02: Living Impressions</title>
 
 	<!-- Use UTF character set, a good idea with any webpage -->
 	<meta charset="UTF-8" />
@@ -32,7 +32,7 @@
 	<main id="content">
 		<section>
 
-			<h1>Experiment X - Subject/Topic</h1>
+			<h1>Experiment 02: Living Impressions</h1>
 
 			<div class="minor-section">
 				<div id="canvas-container">
@@ -40,29 +40,38 @@
 				</div>
                 <div class="fullscreen-box">
                     <button id="fullscreen">Fullscreen</button>
+					<button id="reimagine">Reimagine</button>
                 </div>
 			</div>
 
 			<div class="minor-section">
 				<h2>Description</h2>
-				<p>What are you trying to acomplish with this experiment?</p>
+				<p>This project offers a generative, living impression of this inspiring image:</p>
+				<img src="https://cdn.glitch.global/28b4c751-75c6-4409-a101-0abb9fcfd640/Ocean_Impression.png?v=1713210744025"> [source](https://www.freepik.com/free-photo/beautiful-tropical-beach-sea-ocean-with-white-cloud-blue-sky-copyspace_5017216.htm#query=ocean&position=0&from_view=keyword&track=sph&uuid=460eb75f-fa8d-49a6-abe7-b27ee92ea9ba)
+
 			</div>
 
 			<div class="minor-section">
 				<h2>Technical</h2>
-				<p>Describe in detail what you did technically and how it works?</p>
+				<p>- Color: The sky, water gradient, clouds, and sand colors were sampled from the inspiring image using an online eyedropper tool.
+					- Primitives: The water is drawn as a rectnangle using line() function class and lerpColor for gradient 
+					- Polygons: The sand and water edge is a polygon generated with noise() function and beginShape()
+					- Composition: Different random seed values lead to differently shaped clouds and differently water edge.
+					- Life: The cloud movement simulates clouds moving with the wind. The clouds wrap around to create endless effect. </p>
 			</div>
 
 			<div class="minor-section">
 				<h2>Reflection</h2>
-				<p>Each person that worked on the code should reflect on the process, the difficulties, and the successes of the experiment.</p>
+				<p> I worked on this project individualy and spent quit a while to get it to resemble the image like I wanted. Chat GPT helped me write the drawCloud() function.
+					I asked it to write a function that generates circles with noise and modified it to be the desired shape. 
+				</p>
 			</div>
 
 		</section>
 		<nav id="links" class="minor-section">
 			<!-- Put link back to homepage here. -->
             <ul>
-                <li><a href="../index.html">Home</a></li>
+                <li><a href="https://ghaiby.github.io/CMPM-147/">Home</a></li>
             </ul>
 		</nav>
 	</main>
