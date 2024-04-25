@@ -1,6 +1,6 @@
 /* exported preload, setup, draw, placeTile */
 
-/* global generateGrid drawGrid */
+/* global generateGrid drawGrid  */
 
 let seed2 = 0;
 let tilesetImage2;
