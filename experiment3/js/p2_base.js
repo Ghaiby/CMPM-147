@@ -2,7 +2,7 @@
 
 /* global generateGrid drawGrid */
 
-let seed = 0;
+let seed2 = 0;
 let tilesetImage;
 let currentGrid = [];
 let numRows, numCols;
@@ -14,10 +14,10 @@ function preload() {
 }
 
 function reseed() {
-  seed = (seed | 0) + 1109;
-  randomSeed(seed);
-  noiseSeed(seed);
-  select("#seedReport").html("seed " + seed);
+  seed2 = (seed2 | 0) + 1109;
+  randomSeed(seed2);
+  noiseSeed(seed2);
+  select("#seedReport").html("seed " + seed2);
   regenerateGrid();
 }
 
@@ -67,7 +67,7 @@ function setup() {
 
 
 function draw() {
-  randomSeed(seed);
+  randomSeed(seed2);
   drawGrid(currentGrid);
 }
 
