@@ -2,7 +2,7 @@
 /* global placeTile */
 
 // Lookup table for tile offsets 
-const lookup = [
+const lookup2 = [
     [-5,2], [-5,2], [-5,2], [1,2],
     [-5,2], [2,2], [0,2], [-5,2],
     [-5,2], [2,0], [0,0], [-5,2],
@@ -18,17 +18,6 @@ const lookup = [
       }
     }
     return false;
-  }
-  //check if mouse is over tile 
-  function isMouseOver(x, y) {
-    if(mouseX > x 
-         && mouseX < x + 16 
-         && mouseY > y 
-         && mouseY < y + 16){
-      return true;
-    }else{
-      return false;
-    } 
   }
   
   function generateGrid(numCols, numRows) {
@@ -207,7 +196,7 @@ const lookup = [
   // Draws the appropriate tile based on the code.
   function drawContext(grid, i, j, target, ti, tj) {
     let code = gridCode(grid, i, j, target);
-    let [tiOffset, tjOffset] = lookup[code];
+    let [tiOffset, tjOffset] = lookup2[code];
     placeTile(i, j, 0, 23);
     //fix the walls that are facing down and left, and connected walls 
     if((gridCheck(grid, i+1, j, "_")||gridCheck(grid, i+1, j, "C"))&&!gridCheck(grid, i-1, j, "X")){
