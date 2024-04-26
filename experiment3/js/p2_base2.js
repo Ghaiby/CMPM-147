@@ -52,7 +52,7 @@ function stringToGrid(str) {
   return grid;
 }
 
-function setup() {
+function setup2() {
   numCols = select("#asciiBox").attribute("rows") | 0;
   numRows = select("#asciiBox").attribute("cols") | 0;
 
@@ -66,7 +66,7 @@ function setup() {
 }
 
 
-function draw() {
+function draw2() {
   randomSeed(seed);
   drawGrid(currentGrid);
 }
