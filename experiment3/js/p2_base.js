@@ -1,33 +1,33 @@
 /* exported preload, setup, draw, placeTile */
 
-/* global generateGrid drawGrid  */
+/* global generateGrid drawGrid */
 
-let seed2 = 0;
-let tilesetImage2;
-let currentGrid2 = [];
-let numRows2, numCols2;
+let seed = 0;
+let tilesetImage;
+let currentGrid = [];
+let numRows, numCols;
 
 function preload() {
-  tilesetImage2 = loadImage(
+  tilesetImage = loadImage(
     "https://cdn.glitch.com/25101045-29e2-407a-894c-e0243cd8c7c6%2FtilesetP8.png?v=1611654020438"
   );
 }
 
 function reseed() {
-  seed2 = (seed2 | 0) + 1109;
-  randomSeed(seed2);
-  noiseSeed(seed2);
-  select("#seedReport").html("seed " + seed2);
+  seed = (seed | 0) + 1109;
+  randomSeed(seed);
+  noiseSeed(seed);
+  select("#seedReport").html("seed " + seed);
   regenerateGrid();
 }
 
 function regenerateGrid() {
-  select("#asciiBox").value(gridToString(generateGrid(numCols2, numRows2)));
+  select("#asciiBox").value(gridToString(generateGrid(numCols, numRows)));
   reparseGrid();
 }
 
 function reparseGrid() {
-  currentGrid2 = stringToGrid(select("#asciiBox").value());
+  currentGrid = stringToGrid(select("#asciiBox").value());
 }
 
 function gridToString(grid) {
@@ -52,11 +52,11 @@ function stringToGrid(str) {
   return grid;
 }
 
-function setup1() {
-  numCols2 = select("#asciiBox").attribute("rows") | 0;
-  numRows2 = select("#asciiBox").attribute("cols") | 0;
+function setup() {
+  numCols = select("#asciiBox").attribute("rows") | 0;
+  numRows = select("#asciiBox").attribute("cols") | 0;
 
-  createCanvas(16 * numCols2, 16 * numRows2).parent("canvasContainer");
+  createCanvas(16 * numCols, 16 * numRows).parent("canvasContainer");
   select("canvas").elt.getContext("2d").imageSmoothingEnabled = false;
 
   select("#reseedButton").mousePressed(reseed);
@@ -66,13 +66,11 @@ function setup1() {
 }
 
 
-function draw1() {
-  randomSeed(seed2);
-  drawGrid(currentGrid2);
+function draw() {
+  randomSeed(seed);
+  drawGrid(currentGrid);
 }
 
 function placeTile(i, j, ti, tj) {
-  image(tilesetImage2, 16 * j, 16 * i, 16, 16, 8 * ti, 8 * tj, 8, 8);
+  image(tilesetImage, 16 * j, 16 * i, 16, 16, 8 * ti, 8 * tj, 8, 8);
 }
-
-
