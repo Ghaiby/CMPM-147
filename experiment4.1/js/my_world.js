@@ -75,10 +75,10 @@ function p3_preload() {
   waterImg = loadImage('.Assets/water.png');
   sandImg = loadImage('.Assets/sand.png');
   grassImg = loadImage(".Assets/grass.png");
-  Ypirate = loadImage(".Assets/p1");
-  Gpirate = loadImage(".Assets/p2");
-  Rpirate = loadImage(".Assets/p3");
-  Bpirate = loadImage(".Assets/p4");
+  Ypirate = loadImage(".Assets/p1.png");
+  Gpirate = loadImage(".Assets/p2.png");
+  Rpirate = loadImage(".Assets/p3.png");
+  Bpirate = loadImage(".Assets/p4.png");
   boatImg = loadImage(".Assets/ship.png");
   pirateImages = [Ypirate, Gpirate, Rpirate, Bpirate];
   chestImg = loadImage("Assets/chest.png");
