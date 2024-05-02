@@ -82,7 +82,7 @@ function setup() {
   canvasContainer = $(containerId);
   let canvas = createCanvas(canvasContainer.width(), canvasContainer.height());
   canvas.parent(containerId);
-  // resize canvas is the page is resized
+  // resize canvas is the page is resized 
 
   camera_offset = new p5.Vector(-width / 2, height / 2);
   camera_velocity = new p5.Vector(0, 0);
