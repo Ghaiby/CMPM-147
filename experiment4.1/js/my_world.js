@@ -72,16 +72,16 @@ function adjustWaterColors() {
 
 
 function p3_preload() {
-  waterImg = loadImage('https://cdn.glitch.global/5b3ee20f-a674-40ed-ae48-c461d26901f1/water.png?v=1714526601029');
-  sandImg = loadImage('https://cdn.glitch.global/5b3ee20f-a674-40ed-ae48-c461d26901f1/sand.png?v=1714529167070');
-  grassImg = loadImage("https://cdn.glitch.global/5b3ee20f-a674-40ed-ae48-c461d26901f1/grass.png?v=1714529954765");
-  Ypirate = loadImage("https://cdn.glitch.global/5b3ee20f-a674-40ed-ae48-c461d26901f1/yellowPirate.png?v=1714533038327");
-  Gpirate = loadImage("https://cdn.glitch.global/5b3ee20f-a674-40ed-ae48-c461d26901f1/greenPirate.png?v=1714533039540");
-  Rpirate = loadImage("https://cdn.glitch.global/5b3ee20f-a674-40ed-ae48-c461d26901f1/redPirate.png?v=1714533038711");
-  Bpirate = loadImage("https://cdn.glitch.global/5b3ee20f-a674-40ed-ae48-c461d26901f1/bluePirate.png?v=1714533039049");
-  boatImg = loadImage("https://cdn.glitch.global/5b3ee20f-a674-40ed-ae48-c461d26901f1/ship.png?v=1714536686546");
+  waterImg = loadImage('Assets/water.png');
+  sandImg = loadImage('Assets/sand.png');
+  grassImg = loadImage("Assets/grass.png");
+  Ypirate = loadImage("Assets/p1");
+  Gpirate = loadImage("Assets/p2");
+  Rpirate = loadImage("Assets/p3");
+  Bpirate = loadImage("Assets/p4");
+  boatImg = loadImage("Assets/ship.png");
   pirateImages = [Ypirate, Gpirate, Rpirate, Bpirate];
-  chestImg = loadImage("https://cdn.glitch.global/5b3ee20f-a674-40ed-ae48-c461d26901f1/chest.png?v=1714605286435");
+  chestImg = loadImage("Assets/chest.png");
 }
 
 function p3_setup() {}
