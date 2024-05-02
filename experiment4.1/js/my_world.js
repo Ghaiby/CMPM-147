@@ -72,7 +72,7 @@ function adjustWaterColors() {
 
 
 function p3_preload() {
-    //load images
+    //load images 
   waterImg = loadImage('Assets/water.png');
   sandImg = loadImage('Assets/sand.png');
   grassImg = loadImage("Assets/grass.png");
