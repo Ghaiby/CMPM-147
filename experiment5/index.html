@@ -79,16 +79,16 @@
 
 			<div class="minor-section">
 				<h2>Description</h2>
-				<p>In this expirament, we're building a generator that directly reads balclk and white high contrast images, renders parameterized images, and adjusts its own designs to optimize an evaluation score.</p>
+				<p>In this expirament, we're building a generator that directly reads black and white high contrast images, renders parameterized images, and adjusts its own designs to optimize an evaluation score.</p>
 			</div>
 
 			<div class="minor-section">
 				<h2>Technical</h2>
                 <ol>
-                    <li>This project integrates inspiring images that are selectable from the drop-down on the display page. (This could be three distinct images or one image with three different sets of clues that cause the generator to interpret it in a different way.)</li>
-                    <li>The design object is initialized in inspiration-specific ways. Selecting different inspirations should lead to different behaviors of initDesign.</li>
-                    <li>The design is rendered in a way that can possibly produce results that feel related to the inspiring images. (The 30-second annealing trick should produce images that resemble the inspiring image if we squint.)</li>
-                    <li>The mutation process makes incremental changes to your design. The rate parameter should be implemented in a way that allows the user to almost stop exploration by sliding the rate down to 1%. Your generator must respond to the mutation rate slider.</li>
+                    <li>This project integrates images of an eye, a pier, and a flower that are selectable from the drop-down on the display page.</li>
+                    <li>The design is based on the colors of the pixels in the images. Images with different shapes will be rendered with different shaes .</li>
+                    <li>The designs resemble the images after being mutated properly (30s trick) </li>
+                    <li>The rate parameter allows the user to almost stop exploration by sliding the rate down to 1%.</li>
                 </ol>
 			</div>
 
@@ -100,7 +100,7 @@
 
 			<div class="minor-section">
 				<h2>Reflection</h2>
-				<p> Iwas confused on what this experiment was doing in the beggining, But after playing around and reading the directions closely was able to get nice results</p>
+				<p> I was confused on what this experiment was doing in the beggining, But after playing around and reading the directions closely was able to get nice results</p>
 			</div>
 
 		</section>
